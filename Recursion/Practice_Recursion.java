@@ -56,15 +56,16 @@ import java.util.Scanner;
 // print from n to 1
 
 //public class Practice_Recursion {
-//    static void print(int i, int n) {
-//        if(i > n)
+//    static void print(int n) {
+//        if(n == 0)
 //            return;
-//        print(i + 1, n);
-//        System.out.print(i + " ");
+//        System.out.print(n + " ");
+//        print(n-1);
+////        System.out.print(n + " ");
 //    }
 //    public static void main(String[] args) {
 //        int n = 5;
-//        print(1, n);
+//        print(n);
 //    }
 //}
 
@@ -72,14 +73,14 @@ import java.util.Scanner;
 
 //public class Practice_Recursion {
 //    static void print(int i, int n) {
-//        if(i < 1)
+//        if(i > n)
 //            return;
-//        print(i - 1, n);
 //        System.out.print(i + " ");
+//        print(i + 1, n);
 //    }
 //    public static void main(String[] args) {
 //        int n = 5;
-//        print(n, n);
+//        print(1, n);
 //    }
 //}
 
@@ -104,6 +105,24 @@ import java.util.Scanner;
 //}
 
 // Method - 2
+//public class Practice_Recursion {
+//    static void print(int n, int sum) {
+//
+//        if(n == 0) {
+//            System.out.println(sum);
+//            return;
+//        }
+//        print(n-1, sum + n);
+//
+////        return sum;
+//    }
+//    public static void main(String[] args) {
+//        int n = 5;
+//        print(n, 0);
+//    }
+//}
+
+// Method - 3
 
 //public class Practice_Recursion {
 //    static int print(int n) {
@@ -155,35 +174,35 @@ import java.util.Scanner;
 
 
 // Factorial of n
-import java.util.List;
-import java.util.ArrayList;
-public class Practice_Recursion {
-    static void subsequence(int i, List<Integer> ds, int[] arr) {
-        if(i == arr.length) {
-         for(int num : ds)
-             System.out.print(num + " ");
-         if(ds.size() == 0)
-             System.out.print("{}");
-
-            System.out.println();
-         return;
-        }
-
-        ds.add(arr[i]);
-        subsequence(i+1, ds, arr);
-        ds.remove(ds.get(ds.size()-1));
-        subsequence(i+1, ds, arr);
-    }
-    public static void main(String[] args) {
-//        int[] arr = {3, 1, 2};
-//        int n = arr.length;
-//        List<Integer> ds = new ArrayList<>();
-//        subsequence(0, ds, arr);
-
-        int a = 2, b = 2;
-        int ans = Integer.compare(b, a);
-        System.out.println(ans);
-    }
-}
+//import java.util.List;
+//import java.util.ArrayList;
+//public class Practice_Recursion {
+//    static void subsequence(int i, List<Integer> ds, int[] arr) {
+//        if(i == arr.length) {
+//         for(int num : ds)
+//             System.out.print(num + " ");
+//         if(ds.size() == 0)
+//             System.out.print("{}");
+//
+//            System.out.println();
+//         return;
+//        }
+//
+//        ds.add(arr[i]);
+//        subsequence(i+1, ds, arr);
+//        ds.remove(ds.get(ds.size()-1));
+//        subsequence(i+1, ds, arr);
+//    }
+//    public static void main(String[] args) {
+////        int[] arr = {3, 1, 2};
+////        int n = arr.length;
+////        List<Integer> ds = new ArrayList<>();
+////        subsequence(0, ds, arr);
+//
+//        int a = 2, b = 2;
+//        int ans = Integer.compare(b, a);
+//        System.out.println(ans);
+//    }
+//}
 
 
