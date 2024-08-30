@@ -206,3 +206,19 @@ import java.util.Scanner;
 //}
 
 
+//// Factorial of n
+public class Practice_Recursion {
+    static int print(int n, int sum) {
+        if(n == 0)
+            return sum;
+        return n + print(n - 1, 0);
+
+    }
+    public static void main(String[] args) {
+        int n = 3;
+        System.out.println(print(n, 0));
+
+//        double ans = Math.sqrt(n);
+    }
+}
+

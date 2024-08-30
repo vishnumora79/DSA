@@ -161,17 +161,50 @@ public class practice_code {
 //        }
 //    }
 
-    public static void main(String[] args) {
-        int n = 10;
-        System.out.println(gfg_coding1(n));
+//    public static void main(String[] args) {
+//        int n = 10;
+//        System.out.println(gfg_coding1(n));
+//    }
+//    static int gfg_coding1(int n) {
+//        if(n == 0 || n == 1) {
+//            return n;
+//        }
+//        else {
+//            return 4 * (gfg_coding1(n-1) - gfg_coding1(n-2));
+//        }
+//    }
+
+
+//    public static void main(String[] args) {
+//        char[] arr_char = new char[10];
+//        for(int i=0;i<10;i++) {
+//            arr_char[i] = 'i';
+//            System.out.println(arr_char[i] + " ");
+//            i++;
+//        }
+//    }
+
+
+        public static void main(String[] args) {
+        int[] arr_char = new int[10];
+            System.out.println(arr_char);
+//        for(int i=0;i<10;i++) {
+//            arr_char[i] = i;
+//            System.out.println(arr_char[i] + " ");
+//            i++;
+//        }
     }
-    static int gfg_coding1(int n) {
-        if(n == 0 || n == 1) {
-            return n;
-        }
-        else {
-            return 4 * (gfg_coding1(n-1) - gfg_coding1(n-2));
-        }
-    }
+
+//    public static void main(String[] args) {
+//        double a = 3.0 / 0;
+//        double b = 0 / 4.0;
+//        double c = 0 / 0.0;
+//
+//        System.out.println(a);
+//        System.out.println(b);
+//        System.out.println(c);
+//    }
  }
+
+
 

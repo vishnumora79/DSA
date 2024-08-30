@@ -18,6 +18,7 @@ public class Recursive_subsequence {
     public static void main(String[] args) {
         int n = 2;
         System.out.println(compute(n));
+        String s = "";
 
 
     }

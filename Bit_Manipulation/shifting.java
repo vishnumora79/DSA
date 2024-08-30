@@ -28,11 +28,16 @@ public class shifting {
         return n & mask;
     }
 
-    static int toggle(int n, int index) {
-        int mask = 1 << index;
+    static int toggle(int n) {
+        if(n == 0)
+             return 1;
+        int bitLength = Integer.toBinaryString(n).length();
+        int mask = (1 << bitLength) - 1;
         return n ^ mask;
     }
     public static void main(String[] args) {
+        int n = 5;
+        System.out.println(toggle(n));
 //        int x = 5;
 //        System.out.println(x << 3);
 
