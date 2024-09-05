@@ -1,3 +1,5 @@
+package Recursion;
+
 import java.util.Scanner;
 
 public class climbstairs_1 {
@@ -24,7 +26,7 @@ public class climbstairs_1 {
     //     }
 
     //     int f1 = memoization_stairs(n-1, dp);
-    //     int f2 = memoization_stairs(n-2, dp); 
+    //     int f2 = memoization_stairs(n-2, dp);
     //     int f3 = memoization_stairs(n-3, dp);
     //     int result = f1 + f2 + f3;
     //     dp[n] = result;
