@@ -1,4 +1,4 @@
-package Logical_placements;
+package GFG_POTD;
 
 class ListNode {
       int val;
